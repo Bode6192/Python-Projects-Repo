@@ -7,7 +7,7 @@ print(mo)
 
 nameRegex = re.compile(r'First Name: (.*) Last Name: (.*)')
 mo1 = nameRegex.search('First Name: Al Last Name: Sweigart')
-print(mo1.group(1))
+print(mo1.group())
 
 print()
 

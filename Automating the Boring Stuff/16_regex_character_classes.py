@@ -14,11 +14,12 @@ mo1 = vowelRegex.findall('RoboCop eats baby food. BABY FOOD.')
 print(mo1)
 
 # Negative Character Class 
+# Note: The caret symbol's function is different in Char classes
 consonantRegex = re.compile(r'[^aeiouAEIOU]')
 mo2 = consonantRegex.findall('RoboCop eats baby food. BABY FOOD.')
 print(mo2)
 
-# The Caret Char (^) matches strrings that start with the 
+# The Caret Char (^) matches strings that start with the 
 # Character after it
 beginsWithHello = re.compile(r'^Hello')
 mo3 = beginsWithHello.search('Hello world!')
