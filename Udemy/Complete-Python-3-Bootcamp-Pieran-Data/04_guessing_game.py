@@ -1,8 +1,8 @@
 from random import randint
 num = randint(1, 100)
-print(num)
+# print(num)
 
-guesses = [0]
+guesses = []
 
 while True:
     guess = int(input('Please enter your guess: '))

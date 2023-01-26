@@ -10,27 +10,22 @@ def password_check(password):
     # Note: Password must be a string 
 
     if len(password) < 8:
-        return  '''Password must be at least eight characters.
-        Try again'''
+        return  '''Password must be at least eight characters.\nTry again'''
     
     uppercase_letter = re.compile(r'[A-Z]')
     lowercase_letter = re.compile(r'[a-z]')
     digit = re.compile(r'[0-9]{1,}')
 
     uppercase_search = uppercase_letter.findall(password)
-    print(uppercase_search)
     lowercase_search = lowercase_letter.findall(password)
     digit_search = digit.findall(password)
 
     if uppercase_search == []:
-        return '''Your password must contain at least one uppercase letter
-        Try again '''
+        return '''Your password must contain at least one uppercase letter\nTry again '''
     elif lowercase_search == []:
-        return '''Your password must contain at least one lowercase letter
-        Try again'''
+        return '''Your password must contain at least one lowercase letter\nTry again'''
     elif digit_search == []:
-        return '''Your password must contain at least one digit char
-        Try again'''
+        return '''Your password must contain at least one digit char\nTry again'''
     else:
         return '''Password Approved'''
 
