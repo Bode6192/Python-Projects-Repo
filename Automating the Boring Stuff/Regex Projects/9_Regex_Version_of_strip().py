@@ -25,3 +25,4 @@ print(regex_strip(comment_string, '.#! '))
 
 string2 = 'SpamSpamBaconSpamEggsSpamSpam'
 print(regex_strip(string2, 'pSam'))
+# returns BaconSpamEggs

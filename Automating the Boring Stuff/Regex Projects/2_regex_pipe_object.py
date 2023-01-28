@@ -14,7 +14,7 @@ print(mo2.group())
 print()
 
 
-# Note: if ther's a need to match the Pipe Character
+# Note: if there's a need to match the Pipe Character
 # we escape with the backslash (\)
 batRegex = re.compile(r'Bat(Man|mobile|copter)')
 mo = batRegex.search('Batcopter lost a wheel')

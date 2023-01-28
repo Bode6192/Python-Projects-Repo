@@ -36,5 +36,10 @@ print(mo1.group())
 
 print()
 
+mo2 = batRegex.search('The Adventures of Batman')
+print(mo2 == None)
+
+print()
+
 mo2 = batRegex.findall('The Adventures of Batman')
 print(mo2 == None)
