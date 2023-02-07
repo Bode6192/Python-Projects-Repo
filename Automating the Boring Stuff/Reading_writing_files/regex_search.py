@@ -1,4 +1,4 @@
-# A progrm that opens all .txt files in a flder and searches
+# A program that opens all .txt files in a flder and searches
 # for any line that matches a user-supplied regex. The results
 # should be printed to the screen.
 
