@@ -24,6 +24,7 @@ print(fileList)
 max_length = len(regex.search(fileList[-1]).group(2))
 
 replace = int(input('At what index do you want to enter a gap? '))
+gap = replace + 1
 
 for file in fileList:
 
