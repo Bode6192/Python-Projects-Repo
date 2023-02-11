@@ -34,16 +34,14 @@ for file in fileList:
     if fileNum == replace:
         newFileName = mo.group(1) + '0'*(max_length-len(str(fileNum))) + str(gap) + mo.group(3)
         shutil.move(os.path.abspath(file), os.path.abspath(newFileName))
-        new_value = replace + 1
-        
 
         for file in fileList[(replace):]:
 
             mo = regex.search(file)
             fileNum = int(regex.search(file).group(2))
-            new_value += 1 
+            gap += 1
             
-            newFileName = mo.group(1) + '0'*(max_length-len(str(fileNum))) + str(new_value) + mo.group(3)
+            newFileName = mo.group(1) + '0'*(max_length-len(str(fileNum))) + str(gap) + mo.group(3)
             shutil.move(os.path.abspath(file), os.path.abspath(newFileName))
 
         break
